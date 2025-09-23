@@ -1,5 +1,4 @@
 # Su's calculator 
-***
 Decided to build a calcultor using my knowledge of the three basic languages of front-end development 
 >- HTML
 >- CSS
@@ -12,4 +11,7 @@ The calculator serves the 4 basic operations
 >4. Division
 ***
 Decimal numbers are allowed with this calculator
-It also allows erasing numbers, or even deleting evrything to start from scratch.
+It also allows erasing numbers, or even deleting evrything to start from scratch
+
+You can check out the website from here
+<button type="button" href="https://sucs23.github.io/calculator/"> My calculator </button>
