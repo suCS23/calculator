@@ -1,0 +1,80 @@
+body{
+    background-color: #A0E0E4;
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+}
+#text{
+    margin: 30px;
+}
+
+#title{
+    font-size: 60px;
+    font-family: "Jersey 20";
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#bio{
+    font-size: 25px;
+    font-family: "Jersey 20";
+    text-align: center;
+    margin-top: 0;
+}
+
+#calculator {
+    position: relative;
+    background-color: #2D4529;
+    height: 475px;
+    width: 300px;
+    outline: 11px solid #63461E;
+    border-radius: 15px;
+}
+
+#calculator p{
+    font-size: 50px;
+    font-family: "Jersey 20"; 
+    color: #e4e4e4;
+    position: absolute;
+    bottom: 310px;
+    margin: 10px;
+}
+
+#control-pad {
+    position: absolute;
+    height: 324.5px;
+    width: 300px;
+    background-color: #DDD1D1;
+    bottom: 0;
+    border-radius: 12.5px;
+}
+
+#buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 11px;
+    width: 277.5px;
+    height: 302.5px;
+    margin: 11px;
+}
+
+button {
+    flex: 0 0 auto;
+    width: 60px;
+    height: 51.5px;
+    border-radius: 5px;
+    border: 0;
+    font-family:"Jersey 20";
+    font-size: 32px;
+    color: #ffffff;
+}
+
+#grey {
+    background-color: #949090;
+}
+
+#orange {
+    background-color: #C8862A;
+}
