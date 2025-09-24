@@ -6,6 +6,7 @@ body{
     display: flex;
     justify-content: center;
 }
+
 #text{
     margin: 30px;
 }
@@ -37,6 +38,7 @@ body{
     width: 300px;
     outline: 11px solid #63461E;
     border-radius: 15px;
+    margin-bottom: 50px;
 }
 
 #calculator p{
@@ -83,4 +85,14 @@ button {
 
 .orange {
     background-color: #C8862A;
+}
+
+@media (max-width: 427px){
+    #title{
+        font-size: 50px;
+    }
+    
+    #bio{
+        font-size: 20px;
+    }
 }
