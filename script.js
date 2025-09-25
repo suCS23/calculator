@@ -25,24 +25,31 @@ buttons.forEach(button => {
         if (value == "AC")
             display.textContent = "";
         else if (value == "ERS")
-            display.textContent = display.textContent.slice(0,-1);
-        else if (value == "="){
+            display.textContent = display.textContent.slice(0, -1);
+        else if (value == "-M" || value == "+M")
+            display.textContent += value[0];
+        else if (value == "=") {
             let i = display.textContent.indexOf(" ");
-            let x = Number(display.textContent.slice(0,i));
-            let y = Number(display.textContent.slice(i+3,));
+            let x = Number(display.textContent.slice(0, i));
+            let y = Number(display.textContent.slice(i + 3,));
 
-            switch(display.textContent.slice(i+1,i+2)){
-                case "+" : value = addition(x,y); break;
-                case "-" : value = subtraction(x,y); break;
-                case "X" : value = multiplication(x,y); break;
-                case "/" : value = division(x,y); break;
-                default : value = "error";
+            switch (display.textContent.slice(i + 1, i + 2)) {
+                case "+": value = addition(x, y); break;
+                case "-": value = subtraction(x, y); break;
+                case "X": value = multiplication(x, y); break;
+                case "/": value = division(x, y); break;
+                default: value = "error";
             }
-
-            display.textContent = value;
+            display.textContent = (value.toString().length > 11)? value.toPrecision(5):value;
         }
-        else{
-            display.textContent += value;
-        } 
+        else {
+
+            if (display.textContent.length > 11){
+                display.textContent = "Out of range"
+                setTimeout(() => display.textContent = "", 1500)
+            }
+            else
+                display.textContent += value;
+        }
     });
 });
